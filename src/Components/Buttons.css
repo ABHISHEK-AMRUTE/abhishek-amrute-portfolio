@@ -1,0 +1,45 @@
+.customButtonNavigation{
+    background-color: white;
+    color: black;
+    font-size: large;
+    padding:10px;
+    /* border-radius: 5px; */
+     border:2px solid white;
+     margin-top: 15px;
+    
+}
+
+.customButtonNavigation:hover{
+    background-color: #cdc3f0;
+    color: #8366ec;
+    font-size: large;
+    padding:10px;
+    border-radius: 5px;
+    border:2px solid #cdc3f0;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:500px){
+    .customButtonNavigation{
+        background-color: white;
+        color: black;
+        font-size: large;
+        padding:5px;
+      
+        /* border-radius: 5px; */
+         border:2px solid white;
+         margin-top: 5px;
+        
+    }
+    .customButtonNavigation:hover{
+        background-color: #cdc3f0;
+        color: #8366ec;
+        font-size: large;
+        padding:5px;
+        border-radius: 5px;
+        border:2px solid #cdc3f0;
+        cursor: pointer;
+    
+    }
+}

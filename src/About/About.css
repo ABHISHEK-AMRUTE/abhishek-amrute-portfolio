@@ -1,5 +1,7 @@
 .leftAlign{
     text-align: left;
+    margin-top: 20%;
+    margin-left: 15%;
 }
 
 .themText{
@@ -28,4 +30,12 @@ width: 65%;
        .lottieSize{
        width: 100%;
        }
+
+
+       .leftAlign{
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
