@@ -1,0 +1,26 @@
+.themeText{
+    color: #7450e9;
+}
+
+
+.secondaryText{
+    color: grey;
+}
+
+.headingText{
+    padding-top: 5%;
+}
+
+.jobCard{
+    text-align: left;
+}
+
+.experienceGrid{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.rightAlign{
+    text-align: right;
+}

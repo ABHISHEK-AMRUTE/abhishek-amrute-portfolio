@@ -1,0 +1,45 @@
+.themeText{
+    color: #7450e9;
+}
+
+.headingText{
+    padding-top: 5%;
+}
+
+.root{
+    max-width: 345px;
+ 
+  }
+.cardWrapping{
+
+    border-radius:4px;
+    max-width: 345px;
+    text-align: left;
+    /* box-shadow: 0 4px 8px 0 #7450e9; */
+    margin: 10px;
+}
+
+.cardWrapping:hover{
+    box-shadow: 0 5px 8px 0 #3309bd;
+    max-width: 345px;  
+    margin: 10px;
+   
+  
+}
+
+.projectGrid{
+margin-top: 5%;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+
+@media screen and (max-width:500px){
+
+.projectGrid{
+margin-top: 5%;
+
+}
+
+}
+

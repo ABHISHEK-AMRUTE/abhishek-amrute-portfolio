@@ -1,0 +1,31 @@
+.leftAlign{
+    text-align: left;
+}
+
+.themText{
+    color: #7450e9;
+}
+
+.bodyTopAlignment{
+ padding-top:10% ;
+ padding-left: 10%;
+ padding-right: 10%;  
+}
+
+.lottieSize{
+width: 65%;
+}
+
+
+@media screen and (max-width : 500px) {
+    
+    .bodyTopAlignment{
+        padding-top:10% ;
+        padding-left: 5%;
+        padding-right: 5%;  
+       }
+       
+       .lottieSize{
+       width: 100%;
+       }
+}
