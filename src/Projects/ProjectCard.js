@@ -12,7 +12,17 @@ const url = "https://www.gstatic.com/webp/gallery/3.jpg"
 
 class ProjectCard extends Component {
 
-    
+    appClickListner =()=>{
+       
+    }
+
+    gitClickListner = ()=>{
+           window.open(this.props.gitLink,'_blank')
+    }
+
+    cardClickListner = ()=>{
+
+    }
 
     render() {
         return (
@@ -27,19 +37,21 @@ class ProjectCard extends Component {
                             title="Contemplative Reptile"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
+                           <div className="themeText">
+                           <Typography gutterBottom variant="h5" component="h2">
                                 {this.props.title}
                             </Typography>
+                           </div>
                             <Typography variant="body2" color="textSecondary" component="p">
                                 {this.props.discription}
                             </Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <Button onClick={this.appClickListner} size="small" color="primary">
                             App
                         </Button>
-                        <Button size="small" color="primary">
+                        <Button  onClick={this.gitClickListner} size="small" color="primary">
                             GitHub
                         </Button>
                     </CardActions>

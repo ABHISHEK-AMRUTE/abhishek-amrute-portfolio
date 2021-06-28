@@ -4,7 +4,9 @@ import './App.css';
 import About from './About/About';
 import Projects from './Projects/Projects';
 import Experience from './Experience/Experience';
-
+import dribbble from './Assets/dribbble.svg'
+import github from './Assets/github.svg'
+import googlePlayStore from './Assets/playstore.svg'
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -71,6 +73,10 @@ class App extends Component  {
       viewVariable : 3
     })
   }
+  drilink =(e) => window.open('https://dribbble.com/abhishek_bt18','_blank');
+  githublink =(e) => window.open('https://github.com/ABHISHEK-AMRUTE','_blank');
+  gpslink =(e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US','_blank');
+  
 
   // const classes = useStyles();
 
@@ -120,6 +126,27 @@ class App extends Component  {
        <Experience/>
         */}
       
+
+<div className="topMargin"> 
+
+<Grid container justify="center" spacing={3}>
+          <Grid item>
+            <img onClick={this.drilink} src={dribbble} className="imageClass"></img>
+          </Grid>
+          <Grid item>
+          <img onClick={this.githublink} src={github} className="imageClass"></img>
+          </Grid>
+          <Grid item>
+          <img onClick={this.gpslink} src={googlePlayStore} className="imageClass"></img>
+          </Grid>
+          <Grid item>
+           
+          </Grid>
+        </Grid>
+</div>
+
+
+
       </div>
     );
   }

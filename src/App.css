@@ -12,7 +12,15 @@
   font-size: 2vw;
  margin-bottom: 10px;
 }
+.imageClass{
+   height: auto;
+   width: 40px;
+   transition: 1s;
+}
 
+.imageClass:hover{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 500px) {
   .heading{
@@ -21,3 +29,9 @@
   }
   
 }
+
+.topMargin{
+  margin-top: 5%;
+}
+
+
