@@ -23,13 +23,14 @@ class About extends Component {
                     <Grid xs={12} sm={6}>
                         <div className="leftAlign">
 
-                            <h1>
+                            <div className="nameHeading secondaryText">
                                 Hi There!<br></br>
-                                I Am <span className="themText"> Abhishek Amrute</span><br></br>
-                                <ReactTypingEffect
+                                I Am <span className="themText"> <b>Abhishek Amrute</b></span><br></br>
+                                <span className="blackHeading"> <ReactTypingEffect 
                                     text={['Software Developer', 'MERN Stack Developer', 'Android Developer']}
-                                />
-                            </h1>
+                                /></span>
+                               
+                            </div>
                         </div>
                     </Grid>
                     <Grid xs={12} sm={6}>

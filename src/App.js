@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import About from './About/About';
 import Projects from './Projects/Projects';
@@ -29,42 +30,99 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function App() {
-  const classes = useStyles();
 
-  return (
-    <div className="App">
-      <Grid container justify="center" spacing={3}>
-        <Grid item>
-          <Buttons text="About"/>
-        </Grid>
-        <Grid item>
-          <Buttons text="Experience"/>
-        </Grid>
-        <Grid item>
-          <Buttons text="Projects"/>
-        </Grid>
-        <Grid item>
-          <Buttons text="Contact"/>
-        </Grid>
-      </Grid>
+class App extends Component  {
 
-      {/* <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            PortFolio
-          </Typography>
-          <Button color="inherit">Abhishek Amrute</Button>
-        </Toolbar>
-      </AppBar> */}
-      <About></About>
-      <Projects></Projects>
-      <Experience></Experience>
-    </div>
-  );
+  state = {
+    viewVariable:0
+  };
+  aboutEventListner=(e) =>{
+    console.log('clicked')
+   
+
+    this.setState({
+      viewVariable : 0
+    })
+  }
+   expEventListner=(e) =>{
+ 
+    console.log('clicked')
+  
+
+    this.setState({
+      viewVariable : 1
+    })
+  }
+  projectEventListner=(e) =>{
+
+    console.log('clicked')
+   
+
+    this.setState({
+      viewVariable : 2
+    })
+  }
+   contactEventListner=(e) =>{
+ 
+    console.log('clicked')
+   
+
+    this.setState({
+      viewVariable : 3
+    })
+  }
+
+  // const classes = useStyles();
+
+  render(){
+    return (
+      <div className="App">
+        <Grid container justify="center" spacing={3}>
+          <Grid item>
+            <div onClick={this.aboutEventListner}>
+              <Buttons text="About" />
+            </div>
+          </Grid>
+          <Grid item>
+            <div onClick={this.expEventListner}>
+              <Buttons text="Experience" />
+            </div>
+          </Grid>
+          <Grid item>
+            <div onClick={this.projectEventListner}>
+              <Buttons text="Projects" />
+            </div>
+          </Grid>
+          <Grid item>
+            <div onClick={this.contactEventListner}>
+              <Buttons text="Contact" />
+            </div>
+          </Grid>
+        </Grid>
+  
+        {/* <AppBar position="static">
+          <Toolbar>
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" className={classes.title}>
+              PortFolio
+            </Typography>
+            <Button color="inherit">Abhishek Amrute</Button>
+          </Toolbar>
+        </AppBar> */}
+       { this.state.viewVariable==0?(<About></About>):(<div/>)}
+       { this.state.viewVariable==2?( <Projects></Projects>):(<div/>)}
+       { this.state.viewVariable==1?(  <Experience></Experience>):(<div/>)}
+
+       {/* <About/>
+       <Projects/>
+       <Experience/>
+        */}
+      
+      </div>
+    );
+  }
 }
 
 export default App;

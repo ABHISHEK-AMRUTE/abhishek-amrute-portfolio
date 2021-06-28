@@ -12,7 +12,7 @@ const url = "https://www.gstatic.com/webp/gallery/3.jpg"
 
 class ProjectCard extends Component {
 
-  
+    
 
     render() {
         return (

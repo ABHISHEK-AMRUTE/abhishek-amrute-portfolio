@@ -1,6 +1,6 @@
 .leftAlign{
     text-align: left;
-    margin-top: 20%;
+    margin-top: 25%;
     margin-left: 15%;
 }
 
@@ -17,6 +17,13 @@
 .lottieSize{
 width: 65%;
 }
+
+.nameHeading{
+    font-size: 2.15vw;
+   
+}
+
+
 
 
 @media screen and (max-width : 500px) {
@@ -38,4 +45,12 @@ width: 65%;
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .nameHeading{
+        font-size:35px;
+       
+    }
+    
 }
+
+

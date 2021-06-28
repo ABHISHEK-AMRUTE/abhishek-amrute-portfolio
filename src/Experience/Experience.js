@@ -60,14 +60,14 @@ class Experience extends Component {
         return (
             <div>
                 <div className="headingText">
-                    <h1>My Professional <span className="themeText">Experiences</span></h1>
-                    Here are my professional experiences
+                    <div className="heading">My Professional <span className="themeText"><b>Experiences</b></span></div>
+                  <div className="secondaryText">  Here are my professional experiences</div>
                 </div>
 
                 <Grid container spacing={2} className="experienceGrid">
 
                     <Grid item xs={12} sm={6}>
-                        <h1>Internships</h1>
+                        <h1 className="secondaryText">Internships</h1>
                         <Timeline >
 
 
@@ -92,10 +92,13 @@ class Experience extends Component {
                                                     </div>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
+                                                <div className="secondaryText"> {ele.time}<br></br>
                                                     <Typography>
-                                                        {ele.time}<br></br>
-                                                       {ele.Discription}
-                                                    </Typography>
+                                                       
+                                                        
+                                                          {ele.Discription}
+                                                     
+                                                    </Typography>  </div>
                                                 </AccordionDetails>
                                             </Accordion>
 
@@ -108,7 +111,7 @@ class Experience extends Component {
                         </Timeline>
                     </Grid>
                     <Grid xs={12} sm={6}>
-                        <h1>Hackathons</h1>
+                        <h1 className="secondaryText">Hackathons</h1>
                         <Timeline align="right">
                         {
                                 hackathons.map((ele) => (
@@ -130,9 +133,11 @@ class Experience extends Component {
                                                     </div>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
-                                                    <Typography>
+                                                    <Typography >
+                                                       <div className="secondaryText">
+                                                          {ele.Discription}
+                                                       </div>
                                                        
-                                                       {ele.Discription}
                                                     </Typography>
                                                 </AccordionDetails>
                                             </Accordion>

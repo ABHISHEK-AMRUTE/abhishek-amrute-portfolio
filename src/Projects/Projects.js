@@ -44,8 +44,9 @@ class Projects extends Component {
         return (
             <div>
                 <div className="headingText">
-                    <h1>My Recent <span className="themeText">Works</span></h1>
-                    Here are my recent project that I worked upon
+
+                    <div className="heading">My Recent <span className="themeText"><b>Works</b></span></div>
+                  <div className="secondaryText">      Here are my recent project that I worked upon</div>
                 </div>
 
 

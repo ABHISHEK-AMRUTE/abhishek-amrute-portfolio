@@ -2,8 +2,9 @@
     background-color: white;
     color: black;
     font-size: large;
-    padding:10px;
-    /* border-radius: 5px; */
+    padding: 5px 10px 5px 10px;
+    
+    border-radius: 5px;
      border:2px solid white;
      margin-top: 15px;
     
@@ -13,8 +14,8 @@
     background-color: #cdc3f0;
     color: #8366ec;
     font-size: large;
-    padding:10px;
-    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
     border:2px solid #cdc3f0;
     cursor: pointer;
 
