@@ -117,14 +117,14 @@ class App extends Component  {
             <Button color="inherit">Abhishek Amrute</Button>
           </Toolbar>
         </AppBar> */}
-       { this.state.viewVariable==0?(<About></About>):(<div/>)}
+       {/* { this.state.viewVariable==0?(<About></About>):(<div/>)}
        { this.state.viewVariable==2?( <Projects></Projects>):(<div/>)}
-       { this.state.viewVariable==1?(  <Experience></Experience>):(<div/>)}
+       { this.state.viewVariable==1?(  <Experience></Experience>):(<div/>)} */}
 
-       {/* <About/>
+       <About/>
        <Projects/>
        <Experience/>
-        */}
+       
       
 
 <div className="topMargin"> 
