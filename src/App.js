@@ -89,25 +89,25 @@ class App extends Component  {
           <Grid item>
             <div onClick={this.aboutEventListner}>
               <Buttons text="About" />
-              { this.viewVariable == 0 ? <div className="horibar"> </div>:<div/>}
+              { this.state.viewVariable == 0 ? (<div className="horibar"> </div>):(<div/>)}
             </div>
           </Grid>
           <Grid item>
             <div onClick={this.expEventListner}>
               <Buttons text="Experience" />
-              { this.viewVariable == 1 ? <div className="horibar"> </div>:<div/>}
+              { this.state.viewVariable == 1 ? (<div className="horibar"> </div>):(<div/>)}
             </div>
           </Grid>
           <Grid item>
             <div onClick={this.projectEventListner}>
               <Buttons text="Projects" />
-              { this.viewVariable == 2 ? <div className="horibar"> </div>:<div/>}
+              { this.state.viewVariable == 2 ? (<div className="horibar"> </div>):(<div/>)}
             </div>
           </Grid>
           <Grid item>
             <div onClick={this.contactEventListner}>
               <Buttons text="Contact" />
-              { this.viewVariable == 3 ? <div className="horibar"> </div>:<div/>}
+              { this.state.viewVariable == 3 ? (<div className="horibar"> </div>):(<div/>)}
             </div>
           </Grid>
         </Grid>

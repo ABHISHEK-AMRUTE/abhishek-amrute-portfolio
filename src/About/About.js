@@ -51,6 +51,7 @@ class About extends Component {
                                 <Grid container justify="left" spacing={3}>
                                     
                                     <Grid item>
+                                        
                                       <button className="resumeButton"> Download CV</button>
                                     </Grid>
                                     <Grid item>
@@ -75,6 +76,7 @@ class About extends Component {
                     </Grid>
                     <Grid xs={12} sm={6}>
                         <div className="lottieSize"> <LottieAnimation lotti={home} />
+                        <a href="https://drive.google.com/file/d/1FjN-58eEe-ZEaWQRYu2uXwd6Bz3dAvnT/view?usp=sharing" download="Resume.pdf">Donload</a>
                         </div>
                         {/* <div className="topMargin">
 
