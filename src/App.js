@@ -7,6 +7,7 @@ import Experience from './Experience/Experience';
 import dribbble from './Assets/dribbble.svg'
 import github from './Assets/github.svg'
 import googlePlayStore from './Assets/playstore.svg'
+import linkedin from './Assets/linkedin.svg'
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -76,6 +77,7 @@ class App extends Component  {
   drilink =(e) => window.open('https://dribbble.com/abhishek_bt18','_blank');
   githublink =(e) => window.open('https://github.com/ABHISHEK-AMRUTE','_blank');
   gpslink =(e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US','_blank');
+  linkedinLink =(e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US','_blank');
   
 
   // const classes = useStyles();
@@ -87,21 +89,25 @@ class App extends Component  {
           <Grid item>
             <div onClick={this.aboutEventListner}>
               <Buttons text="About" />
+              { this.viewVariable == 0 ? <div className="horibar"> </div>:<div/>}
             </div>
           </Grid>
           <Grid item>
             <div onClick={this.expEventListner}>
               <Buttons text="Experience" />
+              { this.viewVariable == 1 ? <div className="horibar"> </div>:<div/>}
             </div>
           </Grid>
           <Grid item>
             <div onClick={this.projectEventListner}>
               <Buttons text="Projects" />
+              { this.viewVariable == 2 ? <div className="horibar"> </div>:<div/>}
             </div>
           </Grid>
           <Grid item>
             <div onClick={this.contactEventListner}>
               <Buttons text="Contact" />
+              { this.viewVariable == 3 ? <div className="horibar"> </div>:<div/>}
             </div>
           </Grid>
         </Grid>
@@ -117,34 +123,17 @@ class App extends Component  {
             <Button color="inherit">Abhishek Amrute</Button>
           </Toolbar>
         </AppBar> */}
-       {/* { this.state.viewVariable==0?(<About></About>):(<div/>)}
+       { this.state.viewVariable==0?(<About></About>):(<div/>)}
        { this.state.viewVariable==2?( <Projects></Projects>):(<div/>)}
-       { this.state.viewVariable==1?(  <Experience></Experience>):(<div/>)} */}
+       { this.state.viewVariable==1?(  <Experience></Experience>):(<div/>)}
 
-       <About/>
+       {/* <About/>
        <Projects/>
        <Experience/>
-       
+        */}
       
 
-<div className="topMargin"> 
-
-<Grid container justify="center" spacing={3}>
-          <Grid item>
-            <img onClick={this.drilink} src={dribbble} className="imageClass"></img>
-          </Grid>
-          <Grid item>
-          <img onClick={this.githublink} src={github} className="imageClass"></img>
-          </Grid>
-          <Grid item>
-          <img onClick={this.gpslink} src={googlePlayStore} className="imageClass"></img>
-          </Grid>
-          <Grid item>
-           
-          </Grid>
-        </Grid>
-</div>
-
+     
 
 
       </div>
