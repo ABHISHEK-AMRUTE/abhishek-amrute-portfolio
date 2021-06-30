@@ -26,17 +26,30 @@
 .imageClass:hover{
   cursor: pointer;
 } */
+.bodyHeroAsset{
+  height: 100%;
+  width: auto;
+  position: fixed;
+ z-index: -1;
+  left: 0;
+  object-fit: fill;
+}
+
 
 @media screen and (max-width: 500px) {
   .heading{
       font-size: 35px;
      
   }
+  .bodyHeroAsset{
+    height:0;
+    width: 0;
+    
+  }
   
 }
 
 .topMargin{
-  margin-top: 5%;
+  margin-top: 7%;
 }
-
 

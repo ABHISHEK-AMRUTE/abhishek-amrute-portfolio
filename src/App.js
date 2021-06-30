@@ -16,6 +16,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import bodyHeroAsset from './Assets/artifact.svg'
 
 import Buttons from './Components/Buttons';
 import { Grid } from '@material-ui/core';
@@ -85,6 +86,7 @@ class App extends Component  {
   render(){
     return (
       <div className="App">
+        <img src={bodyHeroAsset} className="bodyHeroAsset"></img>
         <Grid container justify="center" spacing={3}>
           <Grid item>
             <div onClick={this.aboutEventListner}>
@@ -131,7 +133,27 @@ class App extends Component  {
        <Projects/>
        <Experience/>
         */}
-      
+      <div className="topMargin">
+
+<Grid container justify="center" spacing={3}>
+    
+    
+    <Grid item>
+        <img onClick={this.linkedinLink} src={linkedin} className="imageClass"></img>
+    </Grid>
+    <Grid item>
+        <img onClick={this.githublink} src={github} className="imageClass"></img>
+    </Grid>
+    <Grid item>
+        <img onClick={this.drilink} src={dribbble} className="imageClass"></img>
+    </Grid>
+    
+    <Grid item>
+        <img onClick={this.gpslink} src={googlePlayStore} className="imageClass"></img>
+    </Grid>
+     
+</Grid>
+</div>
 
      
 

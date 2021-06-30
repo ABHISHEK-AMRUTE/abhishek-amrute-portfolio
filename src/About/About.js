@@ -10,20 +10,20 @@ import './About.css'
 
 
 
-import dribbble from '../Assets/dribbble.svg'
-import github from '../Assets/github.svg'
-import googlePlayStore from '../Assets/playstore.svg'
-import linkedin from '../Assets/linkedin.svg'
+// import dribbble from '../Assets/dribbble.svg'
+// import github from '../Assets/github.svg'
+// import googlePlayStore from '../Assets/playstore.svg'
+// import linkedin from '../Assets/linkedin.svg'
 
 
 
 class About extends Component {
 
-    drilink = (e) => window.open('https://dribbble.com/abhishek_bt18', '_blank');
-    githublink = (e) => window.open('https://github.com/ABHISHEK-AMRUTE', '_blank');
-    gpslink = (e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US', '_blank');
-    linkedinLink = (e) => window.open('https://www.linkedin.com/in/abhishek-amrute-33808a172/', '_blank');
-    downloadResume =(e) =>  window.open('https://drive.google.com/u/0/uc?id=1FjN-58eEe-ZEaWQRYu2uXwd6Bz3dAvnT&export=download', '_blank');
+    // drilink = (e) => window.open('https://dribbble.com/abhishek_bt18', '_blank');
+    // githublink = (e) => window.open('https://github.com/ABHISHEK-AMRUTE', '_blank');
+    // gpslink = (e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US', '_blank');
+    // linkedinLink = (e) => window.open('https://www.linkedin.com/in/abhishek-amrute-33808a172/', '_blank');
+    // downloadResume =(e) =>  window.open('https://drive.google.com/u/0/uc?id=1FjN-58eEe-ZEaWQRYu2uXwd6Bz3dAvnT&export=download', '_blank');
     
 
     render() {
@@ -46,7 +46,7 @@ class About extends Component {
 
                             </div>
 
-                            <div className="topMargin">
+                            <div className="topMarginAbout">
 
                                 <Grid container justify="left" spacing={3}>
                                     
@@ -54,19 +54,7 @@ class About extends Component {
                                         
                                       <button onClick={this.downloadResume} className="resumeButton"> Download CV</button>
                                     </Grid>
-                                    <Grid item>
-                                        <img onClick={this.linkedinLink} src={linkedin} className="imageClass"></img>
-                                    </Grid>
-                                    <Grid item>
-                                        <img onClick={this.githublink} src={github} className="imageClass"></img>
-                                    </Grid>
-                                    <Grid item>
-                                        <img onClick={this.drilink} src={dribbble} className="imageClass"></img>
-                                    </Grid>
                                     
-                                    <Grid item>
-                                        <img onClick={this.gpslink} src={googlePlayStore} className="imageClass"></img>
-                                    </Grid>
                                      
                                 </Grid>
                             </div>
@@ -78,25 +66,7 @@ class About extends Component {
                         <div className="lottieSize"> <LottieAnimation lotti={home} />
                       
                         </div>
-                        {/* <div className="topMargin">
-
-                                <Grid container justify="left" spacing={3}>
-                                    <Grid item>
-                                        <img onClick={this.linkedinLink} src={linkedin} className="imageClass"></img>
-                                    </Grid>
-                                    <Grid item>
-                                        <img onClick={this.githublink} src={github} className="imageClass"></img>
-                                    </Grid>
-                                    <Grid item>
-                                        <img onClick={this.drilink} src={dribbble} className="imageClass"></img>
-                                    </Grid>
-                                    
-                                    <Grid item>
-                                        <img onClick={this.gpslink} src={googlePlayStore} className="imageClass"></img>
-                                    </Grid>
-                                    
-                                </Grid>
-                            </div> */}
+                     
                     </Grid>
                 </Grid>
 
