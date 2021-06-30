@@ -23,8 +23,8 @@ class About extends Component {
     githublink = (e) => window.open('https://github.com/ABHISHEK-AMRUTE', '_blank');
     gpslink = (e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US', '_blank');
     linkedinLink = (e) => window.open('https://www.linkedin.com/in/abhishek-amrute-33808a172/', '_blank');
-
-
+    downloadResume =(e) =>  window.open('https://drive.google.com/u/0/uc?id=1FjN-58eEe-ZEaWQRYu2uXwd6Bz3dAvnT&export=download', '_blank');
+    
 
     render() {
         const classes = withStyles();
@@ -52,7 +52,7 @@ class About extends Component {
                                     
                                     <Grid item>
                                         
-                                      <button className="resumeButton"> Download CV</button>
+                                      <button onClick={this.downloadResume} className="resumeButton"> Download CV</button>
                                     </Grid>
                                     <Grid item>
                                         <img onClick={this.linkedinLink} src={linkedin} className="imageClass"></img>
@@ -76,7 +76,7 @@ class About extends Component {
                     </Grid>
                     <Grid xs={12} sm={6}>
                         <div className="lottieSize"> <LottieAnimation lotti={home} />
-                        <a href="https://drive.google.com/file/d/1FjN-58eEe-ZEaWQRYu2uXwd6Bz3dAvnT/view?usp=sharing" download="Resume.pdf">Donload</a>
+                      
                         </div>
                         {/* <div className="topMargin">
 
