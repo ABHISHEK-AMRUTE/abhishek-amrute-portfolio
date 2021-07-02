@@ -3,6 +3,7 @@ import { Grid } from '@material-ui/core';
 import LottieAnimation from '../lottie';
 import './Contact.css'
 import contact from '../animation/contact.json';
+import ContactUs from './ContactUs';
 
 class Contact extends Component {
     render() {
@@ -16,6 +17,7 @@ class Contact extends Component {
                    <div className="headingContact">
                        Contact <span className="themeText"><b>Me</b></span>
                     </div>
+                    {/* <ContactUs/> */}
                    </div>
                    </Grid> 
                    
