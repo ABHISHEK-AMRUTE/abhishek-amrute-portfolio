@@ -4,7 +4,7 @@ import LottieAnimation from '../lottie';
 import './Contact.css'
 import contact from '../animation/contact.json';
 import ContactUs from './ContactUs';
-
+import { Typography } from '@material-ui/core';
 class Contact extends Component {
     render() {
         return (
@@ -18,6 +18,11 @@ class Contact extends Component {
                        Contact <span className="themeText"><b>Me</b></span>
                     </div>
                     {/* <ContactUs/> */}
+                    <Typography>
+                       <div className="secondaryText defineContact">
+                       Please reach me out on <span className="themeText">abhishekamrutelfs@gmail.com</span>. Or fill the below form to send me the mail directly.
+                       </div>
+                    </Typography>
                    </div>
                    </Grid> 
                    
