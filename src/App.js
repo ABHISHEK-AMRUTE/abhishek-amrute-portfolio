@@ -8,6 +8,7 @@ import dribbble from './Assets/dribbble.svg'
 import github from './Assets/github.svg'
 import googlePlayStore from './Assets/playstore.svg'
 import linkedin from './Assets/linkedin.svg'
+import Contact from './contact/Contact';
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -130,6 +131,7 @@ class App extends Component {
         {this.state.viewVariable == 0 ? (<About></About>) : (<div />)}
         {this.state.viewVariable == 2 ? (<Projects></Projects>) : (<div />)}
         {this.state.viewVariable == 1 ? (<Experience></Experience>) : (<div />)}
+        {this.state.viewVariable == 3? (<Contact></Contact>) : (<div />)}
 
         {/* <About/>
        <Projects/>
