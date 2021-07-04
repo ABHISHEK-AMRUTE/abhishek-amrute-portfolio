@@ -12,8 +12,19 @@
   margin-right: 40px;
 }
 
-
-
+.textBox{
+ 
+    padding-top: 10px;
+    
+  
+}
+.sendButton{
+    margin-top: 5px;
+}
+.textBoxInside{
+    margin-top: 10px !important;
+    width: 80%;
+}
 
 @media screen and (max-width : 500px) {
     .headingContact{

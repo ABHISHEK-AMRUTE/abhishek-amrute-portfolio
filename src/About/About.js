@@ -23,7 +23,7 @@ class About extends Component {
     // githublink = (e) => window.open('https://github.com/ABHISHEK-AMRUTE', '_blank');
     // gpslink = (e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US', '_blank');
     // linkedinLink = (e) => window.open('https://www.linkedin.com/in/abhishek-amrute-33808a172/', '_blank');
-    downloadResume =(e) =>  window.open('https://drive.google.com/u/0/uc?id=1FjN-58eEe-ZEaWQRYu2uXwd6Bz3dAvnT&export=download', '_blank');
+    downloadResume =(e) =>  window.open('https://drive.google.com/uc?id=1uckkX0jwBKvrZY6U2vkkEb-Sl_kLtuMG&export=download', '_blank');
     
 
     render() {
