@@ -13,12 +13,13 @@ const url = "https://www.gstatic.com/webp/gallery/3.jpg"
 class ProjectCard extends Component {
 
     appClickListner =()=>{
-       
+        window.open(this.props.appLink,'_blank')
     }
 
     gitClickListner = ()=>{
            window.open(this.props.gitLink,'_blank')
     }
+    
 
     cardClickListner = ()=>{
 
@@ -48,12 +49,13 @@ class ProjectCard extends Component {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Button onClick={this.appClickListner} size="small" color="primary">
+                       { this.props.appLink != "" ? (<Button onClick={this.appClickListner} size="small" color="primary">
                             App
-                        </Button>
-                        <Button  onClick={this.gitClickListner} size="small" color="primary">
+                        </Button>) : <div/>}
+
+                        {this.props.gitLink!="" ? (<Button  onClick={this.gitClickListner} size="small" color="primary">
                             GitHub
-                        </Button>
+                        </Button>) : <div/>}
                     </CardActions>
                 </Card>
             </div>

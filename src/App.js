@@ -79,7 +79,7 @@ class App extends Component {
   drilink = (e) => window.open('https://dribbble.com/abhishek_bt18', '_blank');
   githublink = (e) => window.open('https://github.com/ABHISHEK-AMRUTE', '_blank');
   gpslink = (e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US', '_blank');
-  linkedinLink = (e) => window.open('https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN&gl=US', '_blank');
+  linkedinLink = (e) => window.open('https://www.linkedin.com/in/abhishek-amrute-33808a172/', '_blank');
 
 
   // const classes = useStyles();
